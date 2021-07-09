@@ -5,27 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/npm.css">
     <title>Document</title>
 </head>
 <body>
     <main class="main-page">
         <header class="header">
-            <div class="header__logo-container">
-                <a href="#">
-                    <img src="" alt="logo" class="header__logo-image">
-                </a>
+            <div class="header__uppart">
+                <div class="header__logo-container">
+                    <a href="#">
+                        <img src="assets/images/logo.svg" alt="logo" class="header__logo-image">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item nav__item_dashboard"><a class="nav__link" href="#">Dashboard</a></li>
+                        <li class="nav__item nav__item_chat"><a class="nav__link" href="#">Chat</a></li>
+                        <li class="nav__item nav__item_calendar"><a class="nav__link" href="#">Calendar</a></li>
+                        <li class="nav__item nav__item_app"><a class="nav__link" href="#">Appointments</a></li>
+                        <li class="nav__item nav__item_contacts"><a class="nav__link" href="#">Contacts</a></li>
+                        <li class="nav__item nav__item_settings"><a class="nav__link" href="#">Settings</a></li>
+                        <li class="nav__item nav__item_logout"><a class="nav__link" href="#">Logout</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item nav__item_dashboard"><a class="nav__link" href="#">Dashboard</a></li>
-                    <li class="nav__item nav__item_chat"><a class="nav__link" href="#">Chat</a></li>
-                    <li class="nav__item nav__item_calendar"><a class="nav__link" href="#">Calendar</a></li>
-                    <li class="nav__item nav__item_app"><a class="nav__link" href="#">Appointments</a></li>
-                    <li class="nav__item nav__item_contacts"><a class="nav__link" href="#">Contacts</a></li>
-                    <li class="nav__item nav__item_settings"><a class="nav__link" href="#">Settings</a></li>
-                    <li class="nav__item nav__item_logout"><a class="nav__link" href="#">Logout</a></li>
-                </ul>
-            </nav>
             <nav class="nav-technical">
                 <ul class="nav-technical__list">
                     <li class="nav-technical__item"><a class="nav-technical__link" href="#">Privacy Statement</a></li>
@@ -36,13 +39,13 @@
             </nav>
         </header>
 
-        <div class="dashboard-conainer">
+        <div class="dashboard-container">
             <section class="search">
                 <input type="text" class="search__input" placeholder="Search for a state...">
-                <img src="" alt="" class="search__notification notification-logo">
                 <a class="search__link" href="#">
-                    <img class="profile-picture" src="" alt="">
+                    <img src="assets/images/notification.svg" alt="" class="search__notification notification-logo">
                 </a>
+                <img class="profile-picture" src="assets/images/avatar.png" alt="">
             </section>
             <section class="overview">
                 <div class="overview__title-container">
