@@ -1,7 +1,7 @@
 {
   "name": "test-npm",
   "version": "1.0.0",
-  "description": "test project",
+  "description": "testnpm",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "moment": "^2.29.1"
+    "anychart": "^8.10.0",
+    "chart.js": "^3.4.1",
+    "moment": "^2.29.1",
+    "uniq": "^1.0.1"
   }
 }

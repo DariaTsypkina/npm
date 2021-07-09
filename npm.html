@@ -1,17 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NPM</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <title>Document</title>
 </head>
-
 <body>
-    <h1>NPM и модули</h1>
+    <main class="main-page">
+        <header class="header">
+            <div class="header__logo-container">
+                <a href="#">
+                    <img src="" alt="logo" class="header__logo-image">
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item nav__item_dashboard"><a class="nav__link" href="#">Dashboard</a></li>
+                    <li class="nav__item nav__item_chat"><a class="nav__link" href="#">Chat</a></li>
+                    <li class="nav__item nav__item_calendar"><a class="nav__link" href="#">Calendar</a></li>
+                    <li class="nav__item nav__item_app"><a class="nav__link" href="#">Appointments</a></li>
+                    <li class="nav__item nav__item_contacts"><a class="nav__link" href="#">Contacts</a></li>
+                    <li class="nav__item nav__item_settings"><a class="nav__link" href="#">Settings</a></li>
+                    <li class="nav__item nav__item_logout"><a class="nav__link" href="#">Logout</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-technical">
+                <ul class="nav-technical__list">
+                    <li class="nav-technical__item"><a class="nav-technical__link" href="#">Privacy Statement</a></li>
+                    <li class="nav-technical__item"><a class="nav-technical__link" href="#">Technical Help</a></li>
+                    <li class="nav-technical__item"><a class="nav-technical__link" href="#">Terms of Use</a></li>
+                    <li class="nav-technical__item"><a class="nav-technical__link" href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <script src="npm.js"></script>
+        <div class="dashboard-conainer">
+            <section class="search">
+                <input type="text" class="search__input" placeholder="Search for a state...">
+                <img src="" alt="" class="search__notification notification-logo">
+                <a class="search__link" href="#">
+                    <img class="profile-picture" src="" alt="">
+                </a>
+            </section>
+            <section class="overview">
+                <div class="overview__title-container">
+                    <h1 class="overview__title">Dashboard</h1>
+                </div>
+                <div class="sessions">
+                    <h2 class="sessions__title">Sessions Overview</h2>
+                    <ul class="sessions__day-list">
+                        <li class="sessions__day-item">Today</li>
+                        <li class="sessions__day-item">Mon</li>
+                        <li class="sessions__day-item">Tue</li>
+                        <li class="sessions__day-item">Wed</li>
+                    </ul>
+                    <div class="sessions__chart-container">
+                        <canvas class="sessions__chart" id="sessionsChart"></canvas>
+                    </div>
+                </div>
+                <div class="realtime">
+                    <h2 class="realtime__title">Realtime</h2>
+                    <div class="realtime__number-users" id="usersNumber">289</div>
+                    <div class="realtime__subtitle">Active Users</div>
+                </div>
+            </section>
+            <section class="info-section">
+                <div class="audience-section">
+                    <h3 class="audience-section__title">Audience</h3>
+                    <div class="audience-section__chart"></div>
+                    <ul class="audience-section__list info-list">
+                        <li class="info-list__item">Total Session</li>
+                        <li class="info-list__item">Total Visitors</li>
+                        <li class="info-list__item">Avg Time Spent</li>
+                    </ul>
+                </div>
+                <div class="language-section">
+                    <h3 class="language-section__title">Language</h3>
+                    <div class="language-section__chart"></div>
+                    <ul class="language-section__list info-list">
+                        <li class="info-list__item">English</li>
+                        <li class="info-list__item">Spanish</li>
+                        <li class="info-list__item">Chinese</li>
+                    </ul>
+                </div>
+                <div class="users-rate">
+
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="bundle.js"></script>
 </body>
-
 </html>
