@@ -24319,12 +24319,14 @@ function creatUsersRate() {
     xLabels.enabled(false);
     let yLabels = chart.yAxis().labels();
     yLabels.enabled(false);
+
     // create a line series and set the data
     let series1 = chart.spline(ratedata1);
     series1.stroke('#E45851');
     
     let series2 = chart.spline(ratedata2);
     series2.stroke('#FDDE69');
+    
     // set the container id
     chart.container(rateChart);
     

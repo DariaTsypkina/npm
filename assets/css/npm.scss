@@ -153,7 +153,8 @@ a {
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
     grid-column: 1 / 4;
-    height: 340px;
+    min-height: 340px;
+    width: 780px;
     margin-bottom: 50px;
 
     padding: 30px 45px 31px 25px;
@@ -198,8 +199,10 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-self: stretch;
     flex: 0 1 270px;
-    height: 340px;
+    min-height: 340px;
+    max-height: 464.53px;
     padding-bottom: 50px;
 
     background: #FFFFFF;
