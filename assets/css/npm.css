@@ -180,9 +180,8 @@ a {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / 4;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+  height: 340px;
+  margin-bottom: 50px;
   padding: 30px 45px 31px 25px;
   background: #FFFFFF;
   -webkit-backdrop-filter: blur(150px);
@@ -235,9 +234,7 @@ a {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 270px;
           flex: 0 1 270px;
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
+  height: 340px;
   padding-bottom: 50px;
   background: #FFFFFF;
   -webkit-backdrop-filter: blur(150px);

@@ -24191,83 +24191,9 @@ const anychart = require('anychart');
 document.addEventListener("DOMContentLoaded", function(event) {
     createDays();
     createMainChart();
-    
-    let audienceChart = document.getElementById('audienceChart');
-    let audiencePersent = [53, 70, 60];
-    let audienceData = {
-        datasets: [{
-            data: audiencePersent,
-            backgroundColor: [
-            'rgba(253, 222, 105, 1)',
-            'rgba(66, 63, 198, 1)',
-            'rgba(228, 88, 81, 1)'
-        ],
-        hoverOffset: 4
-        }]
-    };
-    
-    let chartAudience = new Chart(audienceChart, {
-        type: 'doughnut',
-        data: audienceData,
-        options: {
-            plugins: {
-                legend: {
-                display: false
-                }
-            }
-        }
-    });
-    
-    let languageChart = document.getElementById('languageChart');
-    let languagePercent = [43, 90, 60];
-    let languageData = {
-        datasets: [{
-            data: languagePercent,
-            backgroundColor: [
-            'rgba(228, 88, 81, 1)',
-            'rgba(98, 202, 118, 1)',
-            'rgba(66, 63, 198, 1)'
-        ],
-        hoverOffset: 4
-        }]
-    };
-    
-    let chartLanguage = new Chart(languageChart, {
-        type: 'doughnut',
-        data: languageData,
-        options: {
-            plugins: {
-                legend: {
-                display: false
-                }
-            }
-        }
-    });
-    
-    let ratedata1 = [1, 2, 5, 4, 7, 10, 5, 8];
-    let ratedata2 = [2, 5, 6, 4, 8, 3, 5,9]
-    
-    // create a chart
-    chart = anychart.line();
-    chart.xAxis().stroke("none");
-    chart.xAxis().ticks(false);
-    chart.yAxis().stroke("none");
-    chart.yAxis().ticks(false);
-    let xLabels = chart.xAxis().labels();
-    xLabels.enabled(false);
-    let yLabels = chart.yAxis().labels();
-    yLabels.enabled(false);
-    // create a line series and set the data
-    let series1 = chart.spline(ratedata1);
-    series1.stroke('#E45851');
-    
-    let series2 = chart.spline(ratedata2);
-    series2.stroke('#FDDE69');
-    // set the container id
-    chart.container(rateChart);
-    
-    // initiate drawing the chart
-    chart.draw();    
+    createAudienceChart();
+    createLanguageChart();
+    creatUsersRate();
 });
 
 function createMainChart() {
@@ -24321,6 +24247,89 @@ function createMainChart() {
             }
         }
     });
+}
+
+function createAudienceChart() {
+    let audienceChart = document.getElementById('audienceChart');
+    let audiencePersent = [53, 70, 60];
+    let audienceData = {
+        datasets: [{
+            data: audiencePersent,
+            backgroundColor: [
+            'rgba(253, 222, 105, 1)',
+            'rgba(66, 63, 198, 1)',
+            'rgba(228, 88, 81, 1)'
+        ],
+        hoverOffset: 4
+        }]
+    };
+    
+    let chartAudience = new Chart(audienceChart, {
+        type: 'doughnut',
+        data: audienceData,
+        options: {
+            plugins: {
+                legend: {
+                display: false
+                }
+            }
+        }
+    });
+}
+
+function createLanguageChart() {
+    let languageChart = document.getElementById('languageChart');
+    let languagePercent = [43, 90, 60];
+    let languageData = {
+        datasets: [{
+            data: languagePercent,
+            backgroundColor: [
+            'rgba(228, 88, 81, 1)',
+            'rgba(98, 202, 118, 1)',
+            'rgba(66, 63, 198, 1)'
+        ],
+        hoverOffset: 4
+        }]
+    };
+    
+    let chartLanguage = new Chart(languageChart, {
+        type: 'doughnut',
+        data: languageData,
+        options: {
+            plugins: {
+                legend: {
+                display: false
+                }
+            }
+        }
+    });
+}
+
+function creatUsersRate() {
+    let ratedata1 = [1, 2, 5, 4, 7, 10, 5, 8];
+    let ratedata2 = [2, 5, 6, 4, 8, 3, 5,9]
+    
+    // create a chart
+    chart = anychart.line();
+    chart.xAxis().stroke("none");
+    chart.xAxis().ticks(false);
+    chart.yAxis().stroke("none");
+    chart.yAxis().ticks(false);
+    let xLabels = chart.xAxis().labels();
+    xLabels.enabled(false);
+    let yLabels = chart.yAxis().labels();
+    yLabels.enabled(false);
+    // create a line series and set the data
+    let series1 = chart.spline(ratedata1);
+    series1.stroke('#E45851');
+    
+    let series2 = chart.spline(ratedata2);
+    series2.stroke('#FDDE69');
+    // set the container id
+    chart.container(rateChart);
+    
+    // initiate drawing the chart
+    chart.draw();    
 }
 
 function createDays() {
