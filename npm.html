@@ -53,11 +53,7 @@
                 </div>
                 <div class="sessions">
                     <h2 class="sessions__title">Sessions Overview</h2>
-                    <ul class="sessions__day-list">
-                        <li class="sessions__day-item">Today</li>
-                        <li class="sessions__day-item">Mon</li>
-                        <li class="sessions__day-item">Tue</li>
-                        <li class="sessions__day-item">Wed</li>
+                    <ul class="sessions__day-list" id="dayList">
                     </ul>
                     <div class="sessions__chart-container">
                         <canvas class="sessions__chart" id="sessionsChart"></canvas>
@@ -72,24 +68,46 @@
             <section class="info-section">
                 <div class="audience-section">
                     <h3 class="audience-section__title">Audience</h3>
-                    <div class="audience-section__chart"></div>
+                    <div class="audience-section__chart-container">
+                        <canvas class="audience-section__chart" id="audienceChart"></canvas>
+                    </div>
                     <ul class="audience-section__list info-list">
                         <li class="info-list__item">Total Session</li>
                         <li class="info-list__item">Total Visitors</li>
-                        <li class="info-list__item">Avg Time Spent</li>
+                        <li class="info-list__item info-list__item_yellow">Avg Time Spent</li>
                     </ul>
                 </div>
                 <div class="language-section">
                     <h3 class="language-section__title">Language</h3>
-                    <div class="language-section__chart"></div>
+                    <div class="language-section__chart-container">
+                        <canvas class="language-section__chart" id="languageChart"></canvas>
+                    </div>
                     <ul class="language-section__list info-list">
                         <li class="info-list__item">English</li>
                         <li class="info-list__item">Spanish</li>
-                        <li class="info-list__item">Chinese</li>
+                        <li class="info-list__item info-list__item_green">Chinese</li>
                     </ul>
                 </div>
                 <div class="users-rate">
-
+                    <div class="users-rate-container">
+                        <h3 class="users-rate__subtitle">New Users</h3>
+                        <p class="users-rate__number">1501</p>
+                    </div>
+                    <div class="day-select-container">
+                        <select class="day-select" name="day" id="day">
+                            <!-- <option value="Today" class="day-option" selected>Today</option>
+                            <option value="Monday" class="day-option">Monday</option>
+                            <option value="Tuesday" class="day-option">Tuesday</option>
+                            <option value="Wednesday" class="day-option">Wednesday</option> -->
+                        </select>
+                    </div>
+                    <div class="users-rate__bounce bounce-cotainer">
+                        <h3 class="bounce-rate__subtitle">Bounce Rate</h3>
+                        <p class="bounce-rate__number">0.66%</p>
+                    </div>
+                    <div class="rate-chart-container">
+                        <div class="rate-chart" id="rateChart"></div>
+                    </div>
                 </div>
             </section>
         </div>
