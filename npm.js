@@ -1,5 +1,4 @@
 const moment = require('moment');
-require('moment/locale/ru.js');
 moment.locale('en');
 
 const Chart = require('chart.js');
