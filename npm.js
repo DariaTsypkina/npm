@@ -155,7 +155,7 @@ function createDays() {
     let now = moment();
     let today = now.format("[Today]");
     let days = [today];
-    
+
     for (let i = 1; i < 4; i++) {
         days.push(now.add(1, 'days').format("ddd"));
     }
